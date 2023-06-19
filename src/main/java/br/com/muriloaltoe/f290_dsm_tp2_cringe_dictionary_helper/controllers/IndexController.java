@@ -1,4 +1,4 @@
-package br.com.fatecararas.f290_dsm_tp2_cringe_dictionary_helper.controllers;
+package br.com.muriloaltoe.f290_dsm_tp2_cringe_dictionary_helper.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import br.com.fatecararas.f290_dsm_tp2_cringe_dictionary_helper.model.Palavra;
+import br.com.muriloaltoe.f290_dsm_tp2_cringe_dictionary_helper.model.Palavra;
 
 @Controller
 @RequestMapping("/")
@@ -21,8 +21,6 @@ public class IndexController {
     public String getIndex() {
         return "index";
     }
-
-    //http://localhost:9000/soma?a=10&b=20
 
     @GetMapping("/soma")
     public String somaRequestParam(@RequestParam("a") Integer a, 

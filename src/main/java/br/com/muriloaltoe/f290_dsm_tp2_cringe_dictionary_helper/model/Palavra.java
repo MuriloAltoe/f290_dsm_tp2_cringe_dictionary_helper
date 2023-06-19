@@ -1,4 +1,4 @@
-package br.com.fatecararas.f290_dsm_tp2_cringe_dictionary_helper.model;
+package br.com.muriloaltoe.f290_dsm_tp2_cringe_dictionary_helper.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

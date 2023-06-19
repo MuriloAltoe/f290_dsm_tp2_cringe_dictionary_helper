@@ -26,6 +26,7 @@
                     <input type="text" class="form-control" placeholder="Significado"
                         th:field="*{significado}" required>
                 </div>
+                <input type="hidden" id="id" th:field="*{id}">   
                 <div class="col-auto mb-3">
                     <button type="submit" class="btn btn-primary">Salvar</button>
                 </div>
@@ -49,22 +50,19 @@
                         <a th:href="@{/dicionario/excluir/{id} (id = ${p.id})}"
                         class="btn btn-danger btn-sm">Excluir</a>
                     </td>
+                    <td colspan="3">
+                        <a th:href="@{/dicionario/editar/{id} (id = ${p.id})}"
+                        class="btn btn-warning btn-sm">Editar</a>
+                    </td>
                 </tr>
             </tbody>
             </div>
         </table>
         <div th:if="${palavras.size() == 0}" class="alert alert-warning col-4">Ainda não existem palavras
-            criados</div>
+            criadas</div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
-
-<!--    
-    Luiza, Valdelaine, Ester, Daniel, Witer, Joao Vitor, Leandro, Felipe, Mateus,
-    Diego, Murilo, Klayvert, Luca, Luiz fernando, Fernando, carlo, Daniel Carolan, Gabriel, Taina, Vitor,
-    Bruno, Douglas 
--->
